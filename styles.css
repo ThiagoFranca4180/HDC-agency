@@ -204,3 +204,7 @@ header, .navbar {
     margin-top: 20px;
 
 }
+/*time*/
+.card-body{
+    text-align: center;
+}
