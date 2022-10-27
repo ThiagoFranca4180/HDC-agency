@@ -6,7 +6,8 @@
 }
 
 body{
-    font-family: 'Roboto'; sans-serif;
+
+    font-family: 'Roboto'; sans-serif ;
 }
 
 .row{
@@ -319,9 +320,10 @@ header, .navbar {
     background-color: #65daf9;
     text-transform: uppercase;
     color: #fff;
+    
     height: 40px;
     padding: 0 30px;
-    margin-left: -10px;
+    margin-left: -100px;
     position: absolute;
     transition: .5s;
 }
@@ -412,7 +414,7 @@ header, .navbar {
     font-size: 22px;
 }
 
-#contact-form input[type="text"], #contact-form input[type="text"], #contact-form textarea{
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea{
 
     margin-bottom: 15px;
     border-radius: 0;
@@ -453,4 +455,93 @@ header, .navbar {
 #copy-area .container a:hover{
     text-decoration: none;
     color: #3ec1d5;
+}
+
+/*responsividade*/
+
+@media(max-width: 768px){
+    /*geral*/
+    .container{
+        padding: 20px 0;
+
+    }
+
+    /*slider*/
+    #mainSlider .carousel-inner, #mainSlider .carousel-item{
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption h2{
+        font-size: 28px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption{
+        left: 10%;
+        right: 10%;
+    }
+    
+    /*about*/
+    #about-area img{
+        margin-top: 100px;
+    }
+
+    /*data*/
+
+    .circle-box div {
+        padding: 0 10px;
+
+    }
+
+    #data-area p{
+
+       font-size: 16px;
+
+     } 
+
+     /*team*/
+
+    .card-title{
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+
+    }
+
+    /*apply*/
+    #apply-area .apply-box{
+        padding: 50px 25px;
+    }
+
+    /*news-area*/
+    #news-area p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    #email-input {
+        width: 70%;
+
+    }
+
+    #call-area {
+        margin-top: 30px;
+
+    }
+
+    #call-area .container{
+        padding: 30px;
+    }
+
+    #call-area p, #call-area #call-btn{
+
+        font-size: 16px;
+    }
 }
